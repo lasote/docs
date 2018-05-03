@@ -32,7 +32,6 @@
     {% if use_opensearch %}
       <link rel="search" type="application/opensearchdescription+xml" title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}" href="{{ pathto('_static/opensearch.xml', 1) }}"/>
     {% endif %}
-
   {% endif %}
 
   {# RTD hosts this file, so just load on non RTD builds #}
@@ -117,6 +116,12 @@
             {% endif %}
           {% endif %}
 
+                 POLLA!
+
+  {%- for name, url in versions %}
+      <li><a href="{{ url }}">{{ name }}</a></li>
+  {%- endfor %}
+
           {% include "searchbox.html" %}
 
           {% endblock %}
@@ -138,6 +143,7 @@
               <form id="mktoForm_1479"></form>
               <script>MktoForms2.loadForm("http://app-lon04.marketo.com", "256-FNZ-187", 1479);</script>
           </div>
+
         </div>
       </div>
     </nav>
