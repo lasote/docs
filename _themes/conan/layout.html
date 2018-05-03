@@ -116,9 +116,7 @@
             {% endif %}
           {% endif %}
 
-                 POLLA!
-
-  {%- for name, url in versions %}
+  {%- for name, url in versions.tags %}
       <li><a href="{{ url }}">{{ name }}</a></li>
   {%- endfor %}
 
