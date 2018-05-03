@@ -1,1 +1,1 @@
-sphinx-versioning build .  docs/_build/html --whitelist-branches "v*|master"
+sphinx-versioning build .  docs/_build/html --whitelist-tags "*" --whitelist-branches "master"
